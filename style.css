@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #FDB86A, #A73B1F, #FDB86A);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wrapper {
+  background-color: rgba(255, 248, 252, 0.92);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+  color: #b94b7c;
+  margin: 0;
+}
+
+.logo {
+  width: 8.0rem;
+  height: 8.0rem;
+  object-fit: contain;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #7a4d5e;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.award {
+  background-color: #fff8fb;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: #c2185b;
+  max-width: 500px;
+  text-align: center;
+}
+
+.services, .about {
+  margin-top: 2rem;
+}
+
+.services h2, .about h2 {
+  color: #b94b7c;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.about p {
+  font-size: 1.05rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e89bb0;
+  text-align: center;
+}
+
+.contact a {
+  margin: 0 1rem;
+  color: #b94b7c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.icons img {
+  width: 28px;
+  margin: 0 0.4rem;
+  vertical-align: middle;
+}
