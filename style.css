@@ -27,18 +27,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 h1 {
-  font-size: 4.2rem;
-  color: #b94b7c;
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, rgb(254, 87, 50), rgb(223, 78, 34), rgb(210, 99, 9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
 }
 
 .logo {
-  width: 8.0rem;
-  height: 8.0rem;
+  width: 9.0rem;
+  height: 9.0rem;
   object-fit: contain;
 }
 
@@ -65,7 +69,11 @@ h1 {
 }
 
 .services h2, .about h2 {
-  color: #b94b7c;
+  background: linear-gradient(45deg, rgb(233, 30, 99), rgb(255, 152, 0), rgb(76, 175, 80));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
 }
 
 .services ul {
@@ -80,6 +88,7 @@ h1 {
 
 .about p {
   font-size: 1.05rem;
+  text-align: justify;
 }
 
 .contact {
@@ -97,7 +106,27 @@ h1 {
 }
 
 .icons img {
-  width: 28px;
+  width: 64px;
   margin: 0 0.4rem;
   vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .services ul li,
+  .about p {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
 }
